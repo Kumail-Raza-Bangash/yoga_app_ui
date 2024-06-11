@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       providers: [
         ChangeNotifierProvider(create: (context) => ReadyProvider()),
         ChangeNotifierProvider(create: (context) => WorkoutProvider()),
-        ChangeNotifierProvider(create: (_) => SplashScreenProvider()),
+        ChangeNotifierProvider(create: (context) => SplashScreenProvider()),
       ],
       child: const MaterialApp(
         title: 'Flutter Custom Appbar',
